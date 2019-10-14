@@ -1,0 +1,230 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	width: 100%;
+	background: #fff;
+}
+.head{
+	width: 100%;
+	height: 130px;
+	background: #f0182c;
+}
+.clear{
+	clear: both;
+}
+.body{
+	width: 100%;
+	margin: 0 auto;
+}
+#logo{
+	float: left;
+	width: 30%;
+	height: 100%;
+	margin-top: 10px;
+}
+.all{
+	width: 85%;
+	height: 750px;
+	margin: 0 auto;
+	border: 1px solid #f4f4f4;
+	margin-top: 15px;
+	border-radius: 5px;
+	box-shadow: 1px 0 3px 0;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+h1{
+	font-family: Arial;
+	font-size: 6em;
+	font-weight: bold;
+	color: #09244e;
+	padding: 15px 0 35px 55px;
+	text-align: center;
+}
+.form-cont{
+	padding-left: 35px;
+	border-bottom: 1px dotted #f4f4f4;
+	line-height: 2.8em;
+}
+label{
+	float: left;
+	text-align: right;
+	width: 20%;
+	font-family: Arial;
+	font-size: 31px;
+	font-weight: bold;
+}
+.input{
+	width: 65%;
+	height: 2em;
+	text-indent: 10px;
+	margin-left: 10px;
+	border-radius: 20px;
+	box-shadow: inset 3px 5px rgba(170,170,170,0.5);
+	font-size: 31px;
+}
+select{
+	width: 50%;
+	margin-left: 25px;
+	height: 2em;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	font-size: 20px;
+}
+.button{
+	margin-left: 90px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+.cont-b{
+	margin-right: 18px;
+	width: 9em;
+	height: 2.5em;
+	border-radius: 25px;
+	box-shadow: 4px 4px 7px rgba(210,210,210,0.8);
+	font-family: Arial;
+	font-size: 31px;
+	font-weight: bold;
+	color: #2a2d66;
+}
+.b-menu{
+	width: 100%;
+	margin-top: 35px;
+}
+.control{
+	width: 100%;
+	height: 90px;
+	background: #dd2003;
+}
+#control1{
+	font-family: Arial;
+	color: white;
+	font-size: 40px;
+	position: relative;
+	top: 15px;
+	left: 65px;
+}
+.icon{
+	background: url('img/len.png') no-repeat 0 0;
+	display: inline-block;
+	width: 53px;
+	height: 45px;
+	background-size: 40px;
+	position: relative;
+	top: 12px;
+}
+.all-menu{
+	width: 100%;
+	background: #4c4c4c;
+	height: 400px;
+}
+.bao{
+	width: 95%;
+	margin: 0 auto;
+}
+#menu1{
+	width: 48%;
+	display: block;
+	float: left;
+	margin: 0 auto;
+}
+#menu1>ul>li{
+	height: 60px;
+	padding-bottom: 30px;
+	border-bottom: 1.5px solid white;
+	padding-top: 30px;
+}
+#menu1>ul>li>a{
+	color: white;
+	font-family: Arial;
+	font-size: 45px;
+	position: relative;
+	left: 55px;
+}
+#menu2{
+	width: 48%;
+	display: block;
+	float: right;
+	margin: 0 auto;
+}
+#menu2>ul>li{
+	height: 60px;
+	padding-bottom: 30px;
+	border-bottom: 1.5px solid white;
+	padding-top: 30px;
+}
+#menu2>ul>li>a{
+	color: white;
+	font-family: Arial;
+	font-size: 45px;
+	position: relative;
+	left: 45px;
+}
+.foot{
+	width: 100%;
+	background: #333333;
+	border-top: 1.5px solid red;
+}
+.foot>p{
+	color: #666769;
+	width: 90%;
+	padding-bottom: 85px;
+	margin: 0 auto;
+	margin-top: 25px;
+	font-size: 12px;
+	text-indent: 10px;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(0,0,0);
+    background-color: rgba(210,210,210, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 380%;
+}
+
+.overlay a {
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    border: 1px solid #c55c28;
+}
+
+.overlay a:hover, .overlay>a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+}

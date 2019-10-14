@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="create.css">
+</head>
+<body>
+	<div class="head">
+		<img src="img/logo.png" id="logo">
+
+		<div id="myNav" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <div class="overlay-content">
+		    <a href="danhmuc.html">Thời sự</a>
+		    <a href="chitiet.html">Kinh tế vĩ mô</a>
+		    <a href="lienhe.html">Kinh doanh</a>
+		    <a href="gioithieu.html">Công nghệ</a>
+		    <a href="#">Sống</a>
+		    <a href="#">Video</a>
+		    <a href="login.html">Đăng nhập</a>
+		  </div>
+		</div>
+
+		<span style="font-size:65px;color: #fff; float: right; padding: 2% 5%" onclick="openNav()">&#9776;</span>
+
+		<script>
+		function openNav() {
+		    document.getElementById("myNav").style.height = "100%";
+		}
+
+		function closeNav() {
+		    document.getElementById("myNav").style.height = "0%";
+		}
+		</script>
+	</div>
+	<div class="all">
+		<h1>Đăng ký</h1>
+		<form class="form-cont" onsubmit="return checkValidate(this)">
+			<label>Email:</label>
+			<input type="text" name="text" id="username" placeholder="Account" class="input">
+			<br>
+			<span id="username-err" style="color: red; font-size: 22.8px; margin-left: 20.5em"></span>
+			<br>
+			<label>Password:</label>
+			<input type="Password" name="Password" id="Password" placeholder="Password" class="input">
+			<br>
+			<span id="Password-err" style="color: red; font-size: 22.8px; margin-left: 20.5em"></span>
+			<br>
+			<label>Birthday:</label>
+			<input type="date" name="Birthday" id="Birthday" class="input">
+			<br>
+			<span id="Birthday-err" style="color: red; font-size: 22.8px; margin-left: 20.5em"></span>
+			<br>
+			<fieldset style="width: 40%; margin-left: 9em; margin-bottom: 35px;">
+				<legend><h3 style="font-family: Arial;padding: 0 15px; font-size: 31px">Giới tính</h3></legend>
+				<select name="gioitinh">
+					<option>Nam</option>
+					<option>Nữ</option>
+				</select>
+			</fieldset>
+			<div class="button">
+				<button type="submit" class="cont-b">Đăng ký</button>
+				<button class="cont-b">
+					<a href="login.html" style="color: #2a2d66;">Đăng nhập</a>
+				</button>
+			</div>
+		</form>
+		<script type="text/javascript">
+					function checkValidate(form){
+						document.getElementById('username-err').innerText = "";
+						document.getElementById('Password-err').innerText = "";
+						document.getElementById('Birthday-err').innerText = "";
+						var username = form.username.value;
+						var Password = form.Password.value;
+						var Birthday = form.Birthday.value;
+						if(username == ""){
+							document.getElementById('username-err').innerText = "Please enter User";
+						}
+						if(Password == ""){
+							document.getElementById('Password-err').innerText = "Please enter Password";
+						}
+						if(Birthday == ""){
+							document.getElementById('Birthday-err').innerText = "Please enter Birthday";
+						}
+						return false;
+					}
+		</script>
+	</div>
+	<div class="b-menu">
+		<div class="control">
+			<a href="" id="control1">
+				Lên đầu trang
+				<span class="icon"></span>
+			</a>
+		</div>
+		<div class="all-menu">
+			<div class="bao">
+				<div id="menu1">
+					<ul>
+						<li><a href="">Trang chủ</a></li>
+						<li><a href="">Thời sự</a></li>
+						<li><a href="">Kinh doanh</a></li>
+					</ul>
+				</div>
+				<div id="menu2">
+					<ul>
+						<li><a href="">Kinh tế vĩ mô</a></li>
+						<li><a href="">Công nghệ</a></li>
+						<li><a href="">Sống</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="foot">
+		<p style="font-family: Arial">
+			© Copyright 2012 - 2017 - Công ty Cổ phần VCCorp.
+			Tầng 17, 19, 20, 21 Toà nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.<br/>
+			Giấy phép thiết lập trang thông tin điện tử tổng hợp trên internet số 1776/GP-STTTT do Sở Thông tin và Truyền thông TP Hà Nội cấp ngày 23 tháng 06 năm 2014.<br/><br/>
+			Ban biên tập CafeBiz, Tầng 21, tòa nhà Center Building<br/>
+			Địa chỉ: Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.<br/>
+			Điện thoại: 024 7309 5555 Máy lẻ 41294. Fax: 024-39744082<br/>
+			Email: info@cafebiz.vn<br/>
+			Chịu trách nhiệm quản lý nội dung: Ông Nguyễn Thế Tân<br/>
+			Ghi rõ nguồn "CafeBiz" khi phát hành lại thông tin từ kênh thông tin này.<br/><br/>
+			Hỗ trợ quảng cáo: 0942.86.11.33
+		</p>
+	</div>
+</body>
+<script type="text/javascript">
+	if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ 		window.location.href='../Desktop/create.html';
+}
+</script>
+</html>
